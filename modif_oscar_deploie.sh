@@ -7,7 +7,7 @@
 
 
 if [ -e /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat ] ; then
-cp /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat /home/a/admin/oscar_deploie/oscar_deploie_numero_poste.bat.old
+cp /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat.old
 
 sed -i "s/Wpkg-GP\\\uninstall.exe\" \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" \/S/Wpkg-GP\\\" echo oui > %windir%\\\oscar_deploie\\\oui_wpkg/"/home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
