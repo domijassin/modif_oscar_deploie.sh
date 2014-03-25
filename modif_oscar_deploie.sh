@@ -7,7 +7,7 @@
 if [ -e /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat ] ; then
 sed -i.BAK "/%programfiles%/a \if exist \"%programfiles%\\\Wpkg-GP\" echo oui  > %windir%\\\oscar_deploie\\\oui_wpkg" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
-sed -i.BAK "/oui_wpkg/a \if exist \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" call \"%programfiles%\\\Wpkg-GP\\\unistall.exe\" \/S" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
+sed -i.BAK "/oui_wpkg/a \if exist \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" call \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" \/S" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
 sed -i.BAK "39d" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
