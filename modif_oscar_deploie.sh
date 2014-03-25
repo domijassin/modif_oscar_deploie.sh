@@ -13,7 +13,7 @@ sed -i "/%programfiles%/a \if exist \"%programfiles%\\\Wpkg-GP\" echo oui  > %wi
 
 sed -i "/oui_wpkg/a \if exist \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" call \"%programfiles%\\\Wpkg-GP\\\uninstall.exe\" \/S" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
-sed -i "/%programfiles%/d" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
+sed -i "s/%programfiles%/ " /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
 sed -i "/regedit \/s %windir%\\\oscar_deploie\\\oscar_samba_domaine.reg/a \copy \\\\\\\%ip_scribe%\\\admin\\\perso\\\oscar_deploie\\\oscar_var.txt \\\\\\\%ip_scribe%\\\sysprep\\\perso\\\oscar_deploie\\\\" /home/a/admin/perso/oscar_deploie/oscar_deploie_numero_poste.bat
 
